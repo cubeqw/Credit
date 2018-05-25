@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="110dp"
+        android:layout_height="20dp"
+        android:layout_marginTop="0dp"
+        android:text="Сумма кредита" />
+
+    <EditText
+        android:id="@+id/summ"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите сумму"
+        android:inputType="phone" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:layout_marginTop="0dp"
+        android:text="Срок оплаты" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите срок (в месяцах)"
+        android:inputType="phone"
+        android:id="@+id/time"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+
+        android:text="Ежемесячный платёж" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите сумму"
+        android:inputType="phone"
+        android:id="@+id/mouth"/>
+<TextView
+        android:layout_width="match_parent"
+        android:layout_height="20dp"
+        android:text="Первоначальный взнос" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Введите сумму"
+        android:inputType="phone"
+        android:id="@+id/perv"/>
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#38b159"
+        android:text="Рассчитать"
+        android:textColor="@android:color/background_light" />
+
+    <TextView
+        android:id="@+id/Result"
+        android:layout_width="match_parent"
+        android:layout_height="297dp"
+        android:background="@color/colorPrimary"
+        android:text="Здесь будут показаны:
+Сумма выдаваемого кредита;
+Общая выплата;
+Переплата;
+Реальная процентная ставка."
+        android:textAlignment="viewStart"
+        android:textColor="@android:color/background_light"
+        android:textStyle="bold" />
+</LinearLayout>
