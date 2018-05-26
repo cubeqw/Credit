@@ -44,14 +44,14 @@ public class MainActivity extends AppCompatActivity {
                 String tv2 = ("Общая выплата = " + obsh);
                 String tv3 = ("Переплата = " + pereplat);
                 String tv4 = ("Реальная процентная ставка = " + proc + "%");
-                if (pereplat < 0 || proc < 0) {
-                    Result.setText("!ВВЕДЕНЫ НЕКОРЕТНЫЕ ДАННЫЕ!");
+                if (pereplat < 0 || proc < 0|| itogo < 0) {
+                    Result.setText("ВВЕДЕНЫ НЕКОРЕТНЫЕ ДАННЫЕ!");
                 } else {
                     Result.setText(tv1 + "\n" + tv2 + "\n" + tv3 + "\n" + tv4);
                 }
               }    catch (ArithmeticException e){
-                    Result.setText("!ВВЕДЕНЫ НЕКОРЕТНЫЕ ДАННЫЕ!");
+                    Result.setText("ВВЕДЕНЫ НЕКОРЕТНЫЕ ДАННЫЕ!");
                 }catch (NumberFormatException e){
-                    Result.setText("!ВВЕДИТЕ ВСЕ ДАННЫЕ!");
+                    Result.setText("ВВЕДЕНЫ НЕКОРЕТНЫЕ ДАННЫЕ!");
                 }}});
 }}
