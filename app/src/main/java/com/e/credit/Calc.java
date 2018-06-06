@@ -28,7 +28,6 @@ public class Calc extends AppCompatActivity {
                 int y1 = Integer.parseInt(y.getText().toString());
                 int m1 = Integer.parseInt(m.getText().toString());
                 int yr =y1*12;
-                String yr1= String.valueOf(yr);
                 int rr=yr+m1;
                 String result= String.valueOf(rr);
                 Result1.setText(result);
