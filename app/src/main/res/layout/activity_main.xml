@@ -30,6 +30,14 @@
         android:hint="Введите срок (в месяцах)"
         android:inputType="phone"
         android:id="@+id/time"/>
+<Button
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:text="Перевести года в месяца"
+    android:id="@+id/bt1"
+    android:background="#38b159"
+    android:textColor="@android:color/background_light" />
+
 
     <TextView
         android:layout_width="match_parent"
