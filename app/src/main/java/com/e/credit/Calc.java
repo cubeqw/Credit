@@ -34,5 +34,6 @@ public class Calc extends AppCompatActivity {
 
     }
                 catch (NumberFormatException e){
+                    Result1.setText("введите всё");
                     }}
 });}}
