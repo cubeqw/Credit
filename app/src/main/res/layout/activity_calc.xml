@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:inputType="number" />
+        android:inputType="numberPassword" />
 
     <TextView
         android:layout_width="match_parent"
@@ -29,7 +29,7 @@
         android:id="@+id/m"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number" />
+        android:inputType="numberPassword" />
 
     <Button
         android:id="@+id/bt2"
@@ -38,23 +38,15 @@
         android:background="#38b159"
         android:text="Перевести года в месяца"
         android:textColor="@android:color/background_light" />
-<TextView
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:text="Это будет:"
-    android:textSize="50dp"/>
+
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="0"
+        android:text=""
         android:textSize="50dp"
         android:id="@+id/Result1"/>
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="месяцев"
-        android:textSize="50dp"/>
+
 
 </LinearLayout>

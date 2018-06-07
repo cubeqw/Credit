@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Введите сумму"
-        android:inputType="number" />
+        android:inputType="numberPassword" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="20dp"
@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Введите срок (в месяцах)"
-        android:inputType="number"
+        android:inputType="numberPassword"
         android:id="@+id/time"/>
 <Button
     android:layout_width="match_parent"
@@ -49,7 +49,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Введите сумму"
-        android:inputType="number"
+        android:inputType="numberPassword"
         android:id="@+id/mouth"/>
 <TextView
         android:layout_width="match_parent"
@@ -60,7 +60,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Введите сумму"
-        android:inputType="number"
+        android:inputType="numberPassword"
         android:id="@+id/perv"/>
 
     <Button
@@ -76,11 +76,7 @@
         android:layout_width="match_parent"
         android:layout_height="297dp"
         android:background="@color/colorPrimary"
-        android:text="Здесь будут показаны:
-Сумма выдаваемого кредита;
-Общая выплата;
-Переплата;
-Реальная процентная ставка."
+        android:text="Здесь будут показаны: сумма выдаваемого кредита, общая выплата, переплата, реальная процентная ставка."
         android:textAlignment="viewStart"
         android:textColor="@android:color/background_light"
         android:textStyle="bold" />
