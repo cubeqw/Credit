@@ -1,6 +1,7 @@
 package com.e.credit;
 
 import android.app.Activity;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -26,6 +27,11 @@ public class MainActivity extends AppCompatActivity {
         time = findViewById(R.id.time);
         mouth =findViewById(R.id.mouth);
 
+        final Button button1=findViewById(R.id.bt1);
+        button1.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity.this, Calc.class);
+                startActivity(intent);}});
 
 
         final Button button=findViewById(R.id.button);

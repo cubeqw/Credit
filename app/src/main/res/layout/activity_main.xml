@@ -17,7 +17,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Введите сумму"
-        android:inputType="phone" />
+        android:inputType="number" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="20dp"
@@ -28,7 +28,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Введите срок (в месяцах)"
-        android:inputType="phone"
+        android:inputType="number"
         android:id="@+id/time"/>
 <Button
     android:layout_width="match_parent"
@@ -49,7 +49,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Введите сумму"
-        android:inputType="phone"
+        android:inputType="number"
         android:id="@+id/mouth"/>
 <TextView
         android:layout_width="match_parent"
@@ -60,7 +60,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Введите сумму"
-        android:inputType="phone"
+        android:inputType="number"
         android:id="@+id/perv"/>
 
     <Button
