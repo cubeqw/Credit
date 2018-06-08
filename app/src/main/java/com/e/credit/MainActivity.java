@@ -51,13 +51,13 @@ public class MainActivity extends AppCompatActivity {
                 String tv3 = ("Переплата = " + pereplat);
                 String tv4 = ("Реальная процентная ставка = " + proc + "%");
                 if (pereplat < 0 || proc < 0|| itogo < 0) {
-                    Result.setText("Введены некоретные данные!");
+                    Result.setText("Введены некорретные данные!");
                 } else {
                     Result.setText(tv1 + "\n" + tv2 + "\n" + tv3 + "\n" + tv4);
                 }
               }    catch (ArithmeticException e){
-                    Result.setText("Введены некоретные данные!");
+                    Result.setText("Введены некорретные данные!");
                 }catch (NumberFormatException e){
-                    Result.setText("Введены некоретные данные!");
+                    Result.setText("Введены некорретные данные!");
                 }}});
 }}
