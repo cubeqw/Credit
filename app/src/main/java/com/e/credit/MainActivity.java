@@ -1,6 +1,5 @@
 package com.e.credit;
 
-import android.app.Activity;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
@@ -8,6 +7,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -56,8 +56,18 @@ public class MainActivity extends AppCompatActivity {
                     Result.setText(tv1 + "\n" + tv2 + "\n" + tv3 + "\n" + tv4);
                 }
               }    catch (ArithmeticException e){
-                    Result.setText("Введены некорретные данные!");
+                    int duration = Toast.LENGTH_LONG;
+                    Toast toast2 = Toast.makeText(getApplicationContext(),
+                            "Введены некорретные данные!",
+                            duration);
+
+                    toast2.show();
                 }catch (NumberFormatException e){
-                    Result.setText("Введены некорретные данные!");
+                    int duration = Toast.LENGTH_LONG;
+                    Toast toast2 = Toast.makeText(getApplicationContext(),
+                            "Введены некорретные данные!",
+                            duration);
+
+                    toast2.show();
                 }}});
 }}
