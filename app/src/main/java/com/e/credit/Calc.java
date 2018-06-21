@@ -6,6 +6,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
 
 public class Calc extends AppCompatActivity {
     EditText y;
@@ -33,6 +34,12 @@ public class Calc extends AppCompatActivity {
                 String result= String.valueOf(rr);
                Result1.setText("Это будет:"+"\n"+result+"\n"+"месяцев"); }
                 catch (NumberFormatException e){
-                    Result1.setText("Введите всё");
-                    }}
+                    int duration = Toast.LENGTH_LONG;
+                    Toast toast2 = Toast.makeText(getApplicationContext(),
+                            "Введите всё",
+                            duration);
+
+                    toast2.show();
+
+                }}
 });}}
