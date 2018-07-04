@@ -38,36 +38,36 @@ public class MainActivity extends AppCompatActivity {
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
                 try{
-                int summ1 = Integer.parseInt(summ.getText().toString());
-                int mouth1 = Integer.parseInt(mouth.getText().toString());
-                int time1 = Integer.parseInt(time.getText().toString());
-                int perv1 = Integer.parseInt(perv.getText().toString());
-                int itogo = summ1 - perv1;
-                int obsh = time1 * mouth1;
-                int pereplat = obsh - itogo;
-                int proc = pereplat / (summ1 / 100);
-                String tv1 = ("Сумма выдаваемого кредита = " + itogo);
-                String tv2 = ("Общая выплата = " + obsh);
-                String tv3 = ("Переплата = " + pereplat);
-                String tv4 = ("Реальная процентная ставка = " + proc + "%");
+                double summ1 = Double.parseDouble(summ.getText().toString());
+                double mouth1 = Double.parseDouble(mouth.getText().toString());
+                double time1 = Double.parseDouble(time.getText().toString());
+                double perv1 = Double.parseDouble(perv.getText().toString());
+                double itogo = summ1 - perv1;
+                double obsh = time1 * mouth1;
+                double pereplat = obsh - itogo;
+                double proc = pereplat / (summ1 / 100);
+                String r1= getResources().getString(R.string.tv1);
+                String r2= getResources().getString(R.string.tv2);
+                String r3= getResources().getString(R.string.tv3);
+                String r4= getResources().getString(R.string.tv4);
+                String tv1 = (r1 + itogo);
+                String tv2 = (r2 + obsh);
+                String tv3 = (r3+ pereplat);
+                String tv4 = (r4 + proc + "%");
                 if (pereplat < 0 || proc < 0|| itogo < 0) {
-                    Result.setText("Введены некорретные данные!");
+                    int duration = Toast.LENGTH_LONG;
+                    Toast toast2 = Toast.makeText(getApplicationContext(), R.string.toast, duration);
+                    toast2.show();
                 } else {
                     Result.setText(tv1 + "\n" + tv2 + "\n" + tv3 + "\n" + tv4);
                 }
               }    catch (ArithmeticException e){
                     int duration = Toast.LENGTH_LONG;
-                    Toast toast2 = Toast.makeText(getApplicationContext(),
-                            "Введены некорретные данные!",
-                            duration);
-
+                    Toast toast2 = Toast.makeText(getApplicationContext(),R.string.toast, duration);
                     toast2.show();
                 }catch (NumberFormatException e){
                     int duration = Toast.LENGTH_LONG;
-                    Toast toast2 = Toast.makeText(getApplicationContext(),
-                            "Введены некорретные данные!",
-                            duration);
-
+                    Toast toast2 = Toast.makeText(getApplicationContext(), R.string.toast, duration);
                     toast2.show();
                 }}});
 }}

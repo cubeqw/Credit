@@ -10,34 +10,35 @@
         android:layout_width="110dp"
         android:layout_height="20dp"
         android:layout_marginTop="0dp"
-        android:text="Года" />
+        android:text="@string/year" />
 
     <EditText
         android:id="@+id/y"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
 
-        android:inputType="number" />
+        android:inputType="numberDecimal" />
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:layout_marginTop="0dp"
-        android:text="Месяца" />
+        android:text="@string/mouth" />
 
     <EditText
         android:id="@+id/m"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:inputType="number" />
+        android:inputType="numberDecimal" />
 
     <Button
         android:id="@+id/bt2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="#38b159"
-        android:text="Перевести года в месяца"
-        android:textColor="@android:color/background_light" />
+        android:background="@android:color/background_light"
+        android:text="@string/b1"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark" />
 
 
     <TextView

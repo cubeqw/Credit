@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Credit</string>
+    <string name="ed1">Сумма кредаита</string>
+    <string name="h1">Введите сумму</string>
+    <string name="ed2">Срок оплаты</string>
+    <string name="h2">Введите срок (в месяцах)</string>
+    <string name="b1">Конвертировать года в месяца</string>
+    <string name="ed3">Ежемесячный платёж</string>
+    <string name="ed4">Первоначальный взнос</string>
+    <string name="b2">Рассчитать</string>
+    <string name="toast">Упс... Что-то пошло не так. Попробуйте ещё раз</string>
+    <string name="year">Года</string>
+    <string name="mouth">Месяца</string>
+    <string name="tv1">Сумма выдаваемого кредита =</string>
+    <string name="tv2">Общая выплата =</string>
+    <string name="tv3">Переплата =</string>
+    <string name="tv4">Реальная процентная ставка = </string>
+    <string name="tv5">Это будет:</string>
+    <string name="tv6">месяцев</string>
+</resources>

@@ -1,3 +1,20 @@
 <resources>
     <string name="app_name">Credit</string>
+    <string name="ed1">Loan amount</string>
+    <string name="h1">Enter the amount</string>
+    <string name="ed2">Payment term</string>
+    <string name="h2">Enter due date (in months)</string>
+    <string name="b1">Convert years to months</string>
+    <string name="ed3">Monthly payment</string>
+<string name="ed4">Initial payment</string>
+    <string name="b2">Calculate</string>
+    <string name="toast">Oops... Something went wrong. Try again</string>
+    <string name="year">Years</string>
+    <string name="mouth">Month\'s</string>
+    <string name="tv1">Loan amount =</string>
+    <string name="tv2">Total payment= </string>
+    <string name="tv3">Overpayment=  =</string>
+    <string name="tv4">Real interest rate = </string>
+    <string name="tv5">It will be</string>
+    <string name="tv6">months</string>
 </resources>

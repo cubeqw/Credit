@@ -10,56 +10,57 @@
         android:layout_width="110dp"
         android:layout_height="20dp"
         android:layout_marginTop="0dp"
-        android:text="Сумма кредита" />
+        android:text="@string/ed1" />
 
     <EditText
         android:id="@+id/summ"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Введите сумму"
-        android:inputType="number" />
+        android:hint="@string/h1"
+        android:inputType="numberDecimal" />
     <TextView
         android:layout_width="match_parent"
         android:layout_height="20dp"
         android:layout_marginTop="0dp"
-        android:text="Срок оплаты" />
+        android:text="@string/ed2" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Введите срок (в месяцах)"
-        android:inputType="number"
+        android:hint="@string/h2"
+        android:inputType="numberDecimal"
         android:id="@+id/time"/>
-<Button
-    android:layout_width="match_parent"
-    android:layout_height="wrap_content"
-    android:text="Перевести года в месяца"
-    android:id="@+id/bt1"
-    android:background="#38b159"
-    android:textColor="@android:color/background_light" />
+
+    <Button
+        android:id="@+id/bt1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:color/background_light"
+        android:text="@string/b1"
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark" />
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="20dp"
-
         android:text="Ежемесячный платёж" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Введите сумму"
-        android:inputType="number"
+        android:hint="@string/h1"
+        android:inputType="numberDecimal"
         android:id="@+id/mouth"/>
 <TextView
         android:layout_width="match_parent"
         android:layout_height="20dp"
-        android:text="Первоначальный взнос" />
+        android:text="@string/ed4" />
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Введите сумму"
+        android:hint="@string/h1"
         android:inputType="number"
         android:id="@+id/perv"/>
 
@@ -67,18 +68,15 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="40dp"
-        android:background="#38b159"
+        android:background="@android:color/background_light"
         android:text="Рассчитать"
-        android:textColor="@android:color/background_light" />
+        android:textAllCaps="false"
+        android:textColor="@color/colorPrimaryDark" />
 
     <TextView
         android:id="@+id/Result"
         android:layout_width="match_parent"
-        android:layout_height="297dp"
-        android:background="@color/colorPrimary"
-        android:text="Здесь будут показаны: сумма выдаваемого кредита, общая выплата, переплата, реальная процентная ставка."
-        android:textSize="20dp"
+        android:layout_height="wrap_content"
         android:textAlignment="viewStart"
-        android:textColor="@android:color/background_light"
-        android:textStyle="bold" />
+        android:textSize="20dp" />
 </LinearLayout>
