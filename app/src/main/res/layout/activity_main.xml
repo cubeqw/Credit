@@ -44,7 +44,7 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="20dp"
-        android:text="Ежемесячный платёж" />
+        android:text="@string/ed3" />
 
     <EditText
         android:layout_width="match_parent"
@@ -69,7 +69,7 @@
         android:layout_width="match_parent"
         android:layout_height="40dp"
         android:background="@android:color/background_light"
-        android:text="Рассчитать"
+        android:text="@string/b2"
         android:textAllCaps="false"
         android:textColor="@color/colorPrimaryDark" />
 
