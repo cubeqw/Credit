@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Credit</string>
-    <string name="ed1">Сумма кредаита</string>
+    <string name="ed1">Сумма кредита</string>
     <string name="h1">Введите сумму</string>
     <string name="ed2">Срок оплаты</string>
     <string name="h2">Введите срок (в месяцах)</string>
