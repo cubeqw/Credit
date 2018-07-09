@@ -1,5 +1,6 @@
 package com.e.credit;
 
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,6 +21,7 @@ public class Calc extends AppCompatActivity {
         Result1 =findViewById(R.id.Result1);
         y = findViewById(R.id.y);
         m = findViewById(R.id.m);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         final Button button=findViewById(R.id.bt2);
         button.setOnClickListener(new View.OnClickListener() {

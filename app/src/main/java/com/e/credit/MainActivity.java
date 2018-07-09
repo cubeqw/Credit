@@ -1,6 +1,7 @@
 package com.e.credit;
 
 import android.content.Intent;
+import android.content.pm.ActivityInfo;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity {
         perv = findViewById(R.id.perv);
         time = findViewById(R.id.time);
         mouth =findViewById(R.id.mouth);
+        setRequestedOrientation(ActivityInfo.SCREEN_ORIENTATION_PORTRAIT);
 
         final Button button1=findViewById(R.id.bt1);
         button1.setOnClickListener(new View.OnClickListener() {
